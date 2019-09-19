@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class EquationSolver {
 	
-	public ArrayList<Double> solve(Double a, Double b, Double c) {
+	public static ArrayList<Double> solve(Double a, Double b, Double c) {
 		ArrayList<Double> solArray = null;
 		Double solution;
 		if(a == 0) {

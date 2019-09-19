@@ -8,6 +8,10 @@ repositories {
 }
 
 dependencies {
-    // Use JUnit test framework
-    testCompile 'junit:junit:4.12'
+    // Use TestNG framework
+    testCompile 'org.testng:testng:6.10'
+}
+
+test {
+    useTestNG()
 }
