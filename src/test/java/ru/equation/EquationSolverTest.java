@@ -10,7 +10,8 @@ public class EquationSolverTest {
 	
 	@Test
 	public void testNullSolution() {
-		assertNull(EquationSolver.solve(2.1, 4.08, 7.26));
+		ArrayList <Double> solList = EquationSolver.solve(2.1, 4.08, 7.26);
+		assertEquals(0, solList.size());
 	}
 	
 	@Test
@@ -32,5 +33,4 @@ public class EquationSolverTest {
 	public void testSolveException() throws Exception{
 		EquationSolver.solve(0.0, 4.08, 7.26);
 	}
-
 }
